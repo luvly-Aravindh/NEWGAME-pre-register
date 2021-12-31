@@ -1,0 +1,199 @@
+<html>
+<head>
+<title>Game pre-register website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- nav bar -->
+<ul>
+  <button onclick="document.getElementById('id01').style.display='block'" 
+	  style="width:auto;">Sign Up</button>
+  <li><a href="#home" style="background-color:black"><i class="fa fa-home"></i>Home</a></li>
+  <li><a href="dashboard.html"><i class="fa fa-clipboard"></i>Dashbord</a></li>
+  <li class="dropdown">
+ <ul><a href="#" class="dropbtn"><i class="fa fa-chevron-circle-down"></i>feature</a>
+	<div class="dropdown-content">
+      <a href="#">gameing</a>
+      <a href="#">enjoy</a>
+      <a href="#">action</a>
+  </li></ul>
+  <li><a href="#news"><i class="fa fa-envira"></i>features</a></li>
+  <li><a href="#game"><i class="fa fa-info"></i>games adds</a></li>
+  <li><a href="#news"><i class="fa fa-sign-in"></i>sign in </a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn"><i class="fa fa-chevron-circle-down"></i>games</a>
+    <div class="dropdown-content">
+      <a href="#">action</a>
+      <a href="#">thiller</a>
+      <a href="#">funny</a>
+  </li>
+</ul>
+
+<!-- Sign up section -->
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="return home">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1 class="h1">REGISTER HERE</h1>
+      <p>Please fill in this form to create account and enjoy your game</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- Game Image Slider -->
+<h1><i class="fa fa-gamepad"></i>ACTION GAMES SITE</h1>
+<h2 style="text-align:center">games screenshot</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+     <img src="images/a1.jpg" style="width:90%">
+      </div>
+     <div class="mySlides">
+     <div class="numbertext">2 / 6</div>
+     <img src="images/a2.jpg" style="width:90%">
+     </div>
+       <div class="mySlides">
+       <div class="numbertext">3 / 6</div>
+      <img src="images/a3.jpg" style="width:90%">
+     </div>
+       <div class="mySlides">
+       <div class="numbertext">4 / 6</div>
+       <img src="images/a4.jpg" style="width:90%">
+     </div>
+       <div class="mySlides">
+       <div class="numbertext">5 / 6</div>
+       <img src="images/a5.jpg" style="width:90%">
+     </div>
+       <div class="mySlides">
+       <div class="numbertext">6 / 6</div>
+       <img src="images/a6.jpg" style="width:90%">
+     </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="images/a1.jpg" style="width:85%" onclick="currentSlide(1)" alt="action1">
+          </div>
+            <div class="column">
+            <img class="demo cursor" src="images/a2.jpg" style="width:85%" onclick="currentSlide(2)" alt="action2">
+            </div>
+            <div class="column">
+            <img class="demo cursor" src="images/a3.jpg" style="width:85%" onclick="currentSlide(3)" alt="action3">
+          </div>
+      <div class="column">
+           <img class="demo cursor" src="images/a4.jpg" style="width:85%" onclick="currentSlide(4)" alt="action4">
+          </div>
+         <div class="column">
+       <img class="demo cursor" src="images/a5.jpg" style="width:85%" onclick="currentSlide(5)" alt="action5">
+    </div>    
+   <div class="column">
+ <img class="demo cursor" src="images/a6.jpg" style="width:85%" onclick="currentSlide(6)" alt="action6">
+</div>
+</div>
+</div>
+<!-- Article section -->
+<div id="article" class="article">
+<div  class="article-content">
+      <h4 style="color:rgb(255, 255, 255);margin-left: 10px;font-weight: 500;"><strong>SUPPORT HERE</strong></h4>
+      
+   <div>
+<form name="myform" method="post" action="/action_page.php" onsubmit="return validateform()">
+   NAME            :<input type="text" name="name" placeholder="enter name">
+   MOBILE NUMBER   :<input class="num" type="number"name="num" placeholder="enter number">
+   EMAIL ID        :<input type="text"name="email" placeholder="enter e-mail">
+<input style="background-color:red;color:white;width:180px;height:30px;"  type="submit" value="SUBMIT">
+</div>  
+</form>
+  <p style="text-indent:50px">The screen frequently scrolls as the player explores the level, although many games scroll through the level automatically to push the player forward. In 3D action games,.Action games sometimes make use of maps which can be accessed during lulls in action, 
+	                                or a mini-map that is always visible </p>
+                                </div>  
+  <div class="hello">
+  <h3>An action game is a video game genre that emphasizes physical challenges, including hand–eye coordination and reaction-time. The genre includes a large variety of sub-genres, such as fighting games, beat 'em ups, shooter games and platform games. Multiplayer online battle arena and some real-time strategy games are also considered action games.
+
+      In an action game, the player typically controls a character often in the form of a protagonist or avatar. This player character must navigate a level, collecting objects, avoiding obstacles, and battling enemies with their natural skills as well as weapons and other tools at their disposal. At the end of a level or group of levels, the player must often defeat a boss enemy that is more challenging and often a major antagonist in the game's story. Enemy attacks and obstacles deplete the player character's health and lives, and the player receives a game over when they run out of lives.
+
+      Alternatively, the player gets to the end of the game by finishing a sequence of levels to complete a final goal, and see the credits. But some action games, such as early arcade games, are unbeatable and have an indefinite number of levels; with the player's only goal being to get as far as they can to maximize their score.In most action games, the player controls a single avatar as the protagonist.[2] The avatar has the ability to navigate and maneuver, and often collects or manipulates objects. They have a range of defenses and attacks, such as shooting or punching. Many action games make use of a powerful attack that destroys all enemies within a limited range, but this attack is rare
+  </h3>
+ </div></br><br><br>
+
+<!--Instagram profile Card-->
+<div id="game">
+   <img class="ads1"  src="images/ad1.gif" width="505px" height="400px" alt="adimg1">
+     <img class="ads2" src="images/ad2.gif"  width="500px" height="400px" alt="adimg2">
+  
+     <div class="card">
+       <div class="post_header">
+          <img src="images/profile.jpg" alt="">
+            <div class="heading">
+             <p class="main_heading">ARAVINDH</p>
+             <p class="sub_heading">india</p>
+      </div>
+             <i class="fa fa-ellipsis-h"></i>
+      </div>
+     <div class="post_img">
+        <img src="images/kill.jpg" alt="">
+         <marquee><b>LET'S PLAY THIS GAME</b></marquee>
+     </div>
+     <div class="post_footer">
+     <div class="left_box">
+  <input type="checkbox" value="btn" class= "btn">
+     <img src="images/comment.png" alt="">
+      <img src="images/share.png" alt="">
+       </div>
+  <div class="right_box">
+  <img src="images/bookmark.png" alt="">
+   </div>
+   </div>
+  </div><br>
+<!-- footer section -->
+<footer>
+  <br><strong style="color:black"><i class="fa fa-copyright" aria-hidden="true"></i>copyright@2021to2035</strong><br><br><br>
+   <p class="fot1"><i class="fa fa-user-md" aria-hidden="true"></i><cite>published by ARAVINDH </cite><br><br><br>
+    <a href="mailto:aravindhmca2@example.com"><i class="fa fa-envelope" aria-hidden="true"></i>aravindhmca2@gmail.com</a></p><br><br>
+     <p style="color:red"><b>SPONCERED BY</b></p><br>
+     <img class="fot2" src="images/insta.png" alt="instagram">
+   <img class="fot3" src="images/fb.png" alt="fb">
+<img class="fot4" src="images/game.png" alt="gameloft">
+<img class="fot5" src="images/google2.png" alt="">
+ <img class="fot6" src="images/google1.png" alt="google">
+   <img class="fot7" src="images/i.png" alt="i">
+    <img class="fot8" src="images/goads.png" alt="v">
+</footer>
+
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+<!--This site Created by Aravindh -->
